@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="language">
+            <h2 class="languageText">EN</h2>
+        </div>
+        <div class="navigateBar">
+            <div class="logoContainer">
+                <img class="logo" src=" ./GV-logo_final_WG8C.png" alt="Error">
+            </div>
+            <div>
+                <a class="page" href="">Bestseller</a>
+                <a class="page" href="">Products</a>
+                <a class="page" href="">About us </a>
+                <a class="page" href="">Press</a>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="backgroundImg">
+        <h2 class="backgroundItem tittle">Porto</h2>
+        <button class="backgroundItem buttonStyled">Discover</button>
+    </div>
+    <div class="detail">
+        <h2 class="detail_title">Who we are</h2>
+        <p class="detail_text">Founded in 1808 in Germany and acquired by the Lantal Group in 2017, Gierlings Velpor has
+            more than 200 years
+            combined experience in its history. Gierlings Velpor operates one of the few vertical mills left in Europe
+            that emcompasses weaving, dyeing, printing and finishing, including a laboratory.</p>
+        <p class="detail_text">Our core values have remained the same over the years - We want to establish long-term
+            relationships with our
+            clients and suppliers, putting their success in the centre of all activities. We look forward to the future
+            and to keep bringing aesthetics and functionality in harmony.</p>
+    </div>
+    <div class="detail">
+        <h2 class="detail_title">Products</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="photo"></div>
+                <h3>Residential</h3>
+                <p class="detail_text">Velvet is a luxurious, must-have piece in every interior. This timeless fabric
+                    never goes out of
+                    fashion and combines with every taste. Explore our wide range of premium products, from cotton
+                    velvet to mohair velvet.
+
+
+                </p>
+                <button class="buttonStyled black">Discover</button>
+            </div>
+            <div class="grid-item">
+                <div class="photo"></div>
+                <h3>Residential</h3>
+                <p class="detail_text">Velvet is a luxurious, must-have piece in every interior. This timeless fabric
+                    never goes out of
+                    fashion and combines with every taste. Explore our wide range of premium products, from cotton
+                    velvet to mohair velvet.
+
+
+                </p>
+                <button class="buttonStyled black">Discover</button>
+            </div>
+            <div class="grid-item">
+                <div class="photo"></div>
+                <h3>Residential</h3>
+                <p class="detail_text">Velvet is a luxurious, must-have piece in every interior. This timeless fabric
+                    never goes out of
+                    fashion and combines with every taste. Explore our wide range of premium products, from cotton
+                    velvet to mohair velvet.
+
+
+                </p>
+                <button class="buttonStyled black">Discover</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="flex-container">
+            <div>
+                <div>
+                    <img src="./GV-logo_final_W.png" class="logo" alt="">
+                </div>
+
+                <h2>Contact</h2>
+                <a href="">Rua da Rosinha 74</a>
+                <a href="">4825-109 Agua Longa</a>
+                <a href="">Portugal</a>
+                <a href="">Phone:+351 229 673 605</a>
+                <a href="">E-Mail: email01@gy.lantal.pt</a>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <a href="">Products</a>
+                <a href="">Press</a>
+                <a href="">Contact</a>
+                <a href="">About us</a>
+            </div>
+
+
+        </div>
+        <div class="icon_slide">
+            <i class="icon fa-brands fa-linkedin-in"></i>
+            <i class="icon fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const header = document.querySelector('header')
+    console.log(header);
+    window.onscroll = function (e) {
+        // print "false" if direction is down and "true" if up
+        if (this.oldScroll > this.scrollY) {
+            if (header.classList.contains('scrolldown')) {
+                header.classList.remove('scrolldown')
+            }
+            if (!header.classList.contains('scrollup')) {
+                header.classList.add('scrollup')
+            }
+        }
+        else {
+            if (header.classList.contains('scrollup')) {
+
+                header.classList.remove('scrollup')
+            }
+            if (!header.classList.contains('scrolldown')) {
+
+                header.classList.add('scrolldown')
+            }
+        }
+        this.oldScroll = this.scrollY;
+    }
+</script>
+
+</html>

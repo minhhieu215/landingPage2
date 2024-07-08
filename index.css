@@ -1,0 +1,332 @@
+:root {
+    --textColor: #3B3531;
+
+}
+
+/* CSS reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+input {
+    border: 1px solid #b0b0b0;
+    padding: 3px 5px 4px;
+    color: #979797;
+    width: 190px;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.language {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--textColor);
+    padding: 3px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 42px;
+    border-bottom: solid .025px var(--textColor);
+
+}
+
+.navigateBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.logoContainer {
+    padding: 23px 0;
+}
+
+.logo {
+    height: 46px;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+@keyframes scrollDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes scrollUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+header.scrolldown {
+    animation: scrollUp .1s linear forwards;
+}
+
+header.scrollup {
+    display: block;
+    animation: scrollDown .2s linear;
+}
+
+.page {
+    font-size: 20px;
+    margin: 0 16px;
+    padding: 8px;
+    color: black;
+
+}
+
+.backgroundImg {
+    height: 663px;
+    width: 100%;
+    background-image: url('./csm_Contract_df5c5d81f5.jpeg');
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+}
+
+.backgroundItem {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.tittle {
+    font-size: 40px;
+    margin: 16px 0;
+    color: white;
+    top: 35%;
+}
+
+.buttonStyled {
+    padding: 12px 24px;
+    background: transparent;
+    border-radius: 20px;
+    border: solid 1px white;
+    color: white;
+}
+
+.buttonStyled:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: linear 0.2s;
+}
+
+.detail {
+    padding: 0 180px;
+    margin-top: 50px;
+}
+
+.detail_title {
+    font-size: 54px;
+    line-height: 63px;
+    margin-bottom: 58px;
+}
+
+.detail_text {
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1.875em;
+    line-height: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 44px;
+}
+
+.photo {
+    height: 215px;
+    border-radius: 20px;
+    background-image: url('./csm_Contract_df5c5d81f5.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 19px;
+    margin-top: 24px;
+
+}
+
+.black {
+    color: black;
+    border-color: black;
+
+}
+
+.black:hover {
+    color: white;
+    border-color: white;
+}
+
+footer {
+    padding: 0 180px;
+    padding-top: 80px;
+    height: 600px;
+    background-color: #90847a;
+    margin-top: 150px;
+    color: white;
+    font-size: 18px;
+}
+
+footer a {
+    color: white;
+    display: block;
+    line-height: 30px;
+}
+
+footer h2 {
+    margin: 20px 0;
+}
+
+.flex-container {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.icon_slide {
+    margin-top: 30px;
+}
+
+.icon {
+    padding-right: 20px;
+    font-size: 30px;
+
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.divider {
+    content: "";
+    height: 1px;
+    background-color: var(--textColor);
+    width: 100vw;
+
+}
